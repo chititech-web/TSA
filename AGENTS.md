@@ -1,13 +1,14 @@
 <!-- BEGIN:nextjs-agent-rules -->
 # This is NOT the Next.js you know
-
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
 <!-- END:nextjs-agent-rules -->
 
-# TS Aromatics v3 — Quick Reference (AI Agent)
+> **TS Aromatics v3** — Designed & engineered by **Prabhakar Kumar** at **Chiti Technologies**
+>
+> Full documentation → `journal.md`
 
-> **Full documentation → `journal.md`** — read that first for comprehensive technical details.  
-> This file is a terse summary for AI-assisted workflows.
+# AI Agent Quick Reference
+
+> Terse summary for AI-assisted workflows. Always defer to `journal.md` for architecture rationale and edge cases.
 
 ## Stack
 - Next.js 16.2.6 (App Router, Turbopack)

@@ -1,14 +1,78 @@
-# TS Aromatics v3 — Technical Journal
+---
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="/images/logo-dark.svg">
+    <img src="/images/logo.svg" alt="TS Aromatics" height="48">
+  </picture>
+</p>
 
-> **Generated:** 2026-05-12  
-> **Stack:** Next.js 16.2.6 · TypeScript strict · Tailwind v4 · next-intl v4  
-> **Build status:** ✅ `npx next build` — zero errors  
-> **Target audience:** Designers, developers, stakeholders — new team members start here.
+<p align="center">
+  <strong>TS Aromatics v3 — Technical Journal</strong>
+  <br>
+  <sub>Designed & engineered by <strong>Prabhakar Kumar</strong> at <strong>Chiti Technologies</strong></sub>
+</p>
+
+---
+
+## Studio Statement
+
+**Chiti Technologies** is a design and engineering studio that builds digital experiences at the intersection of sensorial craft and technical rigor. Every pixel, every animation curve, and every architecture decision in this project reflects a philosophy: technology should feel alive.
+
+This journal documents not just what was built, but *why* and *how* — the design rationale, the trade-offs, the edge cases solved. It is intended as a portfolio artifact and a technical reference for anyone inheriting the work.
+
+> **Designer:** Prabhakar Kumar  
+> **Studio:** Chiti Technologies  
+> **Client:** TS Aromatics  
+> **Built:** May 2026  
+
+---
+
+## Project Identity
+
+| Attribute | Detail |
+|---|---|
+| **Project** | TS Aromatics v3 — B2B Essential Oils Procurement Platform |
+| **Design Language** | Dark-first, ambient, heat-reactive, amber-lit |
+| **Core Experience** | Technical transparency meets sensory immersion |
+| **Target User** | Manufacturers, wellness founders, formulators |
+| **Locale Support** | English, Hindi |
+
+---
+
+## Build Status
+
+| Check | Status |
+|---|---|
+| `npx next build` | ✅ Zero errors |
+| Static pages (SSG) | 73 products + 8 articles |
+| Dynamic routes | Home, products listing, academy listing, why-us, contact |
+| TypeScript | Strict mode — `strict: true` |
+| Bundle | Turbopack dev, production build via Next.js compiler |
+
+---
+
+## Quick Stack Reference
+
+| Layer | Technology |
+|---|---|
+| Framework | Next.js 16.2.6 (App Router, Turbopack) |
+| Language | TypeScript 5 (strict) |
+| Styling | Tailwind CSS v4 (`@theme inline`) |
+| 3D Viz | Three.js + React Three Fiber + Drei |
+| 2D Canvas | Custom Canvas 2D (chromatogram, globe arcs, bubble sim) |
+| Animation | Framer Motion 12 |
+| i18n | next-intl v4 (EN/HI) |
+| Validation | Zod v4 |
+| Database | Prisma v7 (schema-only, static data active) |
 
 ---
 
 ## Table of Contents
 
+- [Studio Statement](#studio-statement)
+- [Project Identity](#project-identity)
+- [Build Status](#build-status)
+- [Quick Stack Reference](#quick-stack-reference)
 1. [Project Charter](#1-project-charter)
 2. [Tech Stack & Why](#2-tech-stack--why)
 3. [Directory Structure](#3-directory-structure)
@@ -695,6 +759,9 @@ npm run start    # Serve production build locally
 
 ---
 
-> **Document maintained by:** TS Aromatics development team  
-> **Last updated:** 2026-05-12  
-> **Questions?** Start with this journal, then read the component file directly.
+> **Document maintained by:** Chiti Technologies — Design & Engineering Studio  
+> **Designer:** Prabhakar Kumar  
+> **Last updated:** 2026-05-13  
+> **Portfolio:** [github.com/prabhakarmdes12-cmyk](https://github.com/prabhakarmdes12-cmyk)  
+> **Questions?** Start with this journal, then read the component file directly.  
+> *Every line of code is a design decision. Every design decision is documented.*
