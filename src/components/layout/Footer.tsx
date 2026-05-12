@@ -19,7 +19,7 @@ function Clock({ label, timeZone, compact }: { label: string; timeZone: string; 
   if (compact) {
     return (
       <div className="flex items-center gap-1">
-        <span className="font-mono text-[11px] text-[rgba(245,239,232,0.4)]">{time}</span>
+        <span className="font-mono text-[11px] text-[var(--color-muted)]">{time}</span>
         <span className="text-[10px] font-bold uppercase tracking-[0.08em] text-[var(--color-primary)]">{label}</span>
       </div>
     );
@@ -27,7 +27,7 @@ function Clock({ label, timeZone, compact }: { label: string; timeZone: string; 
   return (
     <div className="flex items-center gap-2">
       <span className="text-xs font-bold uppercase tracking-[0.08em] text-[var(--color-primary)] min-w-[2rem]">{label}</span>
-      <span className="font-mono text-sm text-[rgba(245,239,232,0.6)]">{time}</span>
+      <span className="font-mono text-sm text-[var(--color-text-main)]">{time}</span>
     </div>
   );
 }
@@ -124,58 +124,58 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           <div className="col-span-2 md:col-span-1">
             <img src="/images/logo-dark.svg" alt="TS Aromatics" className="h-8 w-auto mb-4" />
-            <p className="text-sm text-[rgba(245,239,232,0.5)] mb-6">{t('tagline')}</p>
+            <p className="text-sm text-[var(--color-muted)] mb-6">{t('tagline')}</p>
             <div className="flex flex-col gap-2 mb-5">
-              <Link href="/products" className="text-sm text-[rgba(245,239,232,0.4)] hover:text-[var(--color-primary)] transition-colors">
+              <Link href="/products" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">
                 {tn('products')}
               </Link>
-              <Link href="/academy" className="text-sm text-[rgba(245,239,232,0.4)] hover:text-[var(--color-primary)] transition-colors">
+              <Link href="/academy" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">
                 {tn('academy')}
               </Link>
-              <Link href="/contact" className="text-sm text-[rgba(245,239,232,0.4)] hover:text-[var(--color-primary)] transition-colors">
+              <Link href="/contact" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">
                 {tn('contact')}
               </Link>
             </div>
             <div className="flex flex-col gap-2">
-              <Link href="/academy" className="text-sm text-[rgba(245,239,232,0.4)] hover:text-[var(--color-primary)] transition-colors">
+              <Link href="/academy" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">
                 {t('docs')}
               </Link>
-              <Link href="/products" className="text-sm text-[rgba(245,239,232,0.4)] hover:text-[var(--color-primary)] transition-colors">
+              <Link href="/products" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">
                 {t('batch')}
               </Link>
             </div>
             <div className="flex gap-4 mt-5">
-              <Link href="/privacy" className="text-xs text-[rgba(245,239,232,0.25)] hover:text-[rgba(245,239,232,0.5)] transition-colors">
+              <Link href="/privacy" className="text-xs text-[var(--color-muted)] hover:text-[var(--color-muted)] transition-colors">
                 {tn('privacy')}
               </Link>
-              <Link href="/terms" className="text-xs text-[rgba(245,239,232,0.25)] hover:text-[rgba(245,239,232,0.5)] transition-colors">
+              <Link href="/terms" className="text-xs text-[var(--color-muted)] hover:text-[var(--color-muted)] transition-colors">
                 {tn('terms')}
               </Link>
             </div>
           </div>
 
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-[0.06em] text-[rgba(245,239,232,0.4)] mb-4">
+            <h4 className="text-xs font-bold uppercase tracking-[0.06em] text-[var(--color-muted)] mb-4">
               {t('technical')}
             </h4>
             <div className="flex flex-col gap-2">
-              <Link href="/academy" className="text-sm text-[rgba(245,239,232,0.4)] hover:text-[var(--color-primary)] transition-colors">{t('docs')}</Link>
-              <Link href="/products" className="text-sm text-[rgba(245,239,232,0.4)] hover:text-[var(--color-primary)] transition-colors">{t('batch')}</Link>
-              <a href="#" className="text-sm text-[rgba(245,239,232,0.4)] hover:text-[var(--color-primary)] transition-colors">{t('sds')}</a>
-              <a href="#" className="text-sm text-[rgba(245,239,232,0.4)] hover:text-[var(--color-primary)] transition-colors">{t('ifra')}</a>
-              <a href="#" className="text-sm text-[rgba(245,239,232,0.4)] hover:text-[var(--color-primary)] transition-colors">{t('api')}</a>
-              <a href="#" className="text-sm text-[rgba(245,239,232,0.4)] hover:text-[var(--color-primary)] transition-colors">{t('partner')}</a>
+              <Link href="/academy" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">{t('docs')}</Link>
+              <Link href="/products" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">{t('batch')}</Link>
+              <a href="#" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">{t('sds')}</a>
+              <a href="#" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">{t('ifra')}</a>
+              <a href="#" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">{t('api')}</a>
+              <a href="#" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">{t('partner')}</a>
             </div>
           </div>
 
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-[0.06em] text-[rgba(245,239,232,0.4)] mb-4">
+            <h4 className="text-xs font-bold uppercase tracking-[0.06em] text-[var(--color-muted)] mb-4">
               {t('logistics')}
             </h4>
             <div className="flex flex-col gap-2 mb-5">
-              <a href="#" className="text-sm text-[rgba(245,239,232,0.4)] hover:text-[var(--color-primary)] transition-colors">{t('shipping')}</a>
-              <a href="#" className="text-sm text-[rgba(245,239,232,0.4)] hover:text-[var(--color-primary)] transition-colors">{t('incoterms')}</a>
-              <a href="#" className="text-sm text-[rgba(245,239,232,0.4)] hover:text-[var(--color-primary)] transition-colors">{t('lead')}</a>
+              <a href="#" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">{t('shipping')}</a>
+              <a href="#" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">{t('incoterms')}</a>
+              <a href="#" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">{t('lead')}</a>
             </div>
             <div className="flex flex-col gap-1.5">
               <Clock label={tc('delhi')} timeZone="Asia/Kolkata" />
@@ -185,7 +185,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-[0.06em] text-[rgba(245,239,232,0.4)] mb-4">
+            <h4 className="text-xs font-bold uppercase tracking-[0.06em] text-[var(--color-muted)] mb-4">
               {t('status')}
             </h4>
             <div
@@ -211,18 +211,18 @@ export function Footer() {
                 {heat > 70 ? `${t('online')} • ${heat}%` : t('online')}
               </span>
             </div>
-            <p className="text-xs text-[rgba(245,239,232,0.25)]">
+            <p className="text-xs text-[var(--color-muted)]">
               {t('copy')}
             </p>
             <div className="mt-4 pt-4 border-t border-[rgba(255,255,255,0.06)]">
-              <h5 className="text-xs font-bold uppercase tracking-[0.06em] text-[rgba(245,239,232,0.4)] mb-3">
+              <h5 className="text-xs font-bold uppercase tracking-[0.06em] text-[var(--color-muted)] mb-3">
                 {t('newsletter')}
               </h5>
               <div className="flex gap-2">
                 <input
                   type="email"
                   placeholder={t('email_placeholder')}
-                  className="flex-1 bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.08)] rounded-lg px-3 py-2 text-sm text-[rgba(245,239,232,0.7)] placeholder:text-[rgba(245,239,232,0.25)] outline-none focus:border-[var(--color-primary)] transition-colors"
+                  className="flex-1 bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.08)] rounded-lg px-3 py-2 text-sm text-[var(--color-text-main)] placeholder:text-[var(--color-muted)] outline-none focus:border-[var(--color-primary)] transition-colors"
                 />
                 <button className="bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors cursor-pointer whitespace-nowrap">
                   {t('subscribe')}
@@ -238,7 +238,7 @@ export function Footer() {
             { label: 'IFRA 2026', verify: 'IFRA-2026-0337' },
             { label: 'USDA Organic', verify: 'USDA-ORG-2026-0567' },
           ].map((cert) => (
-            <div key={cert.verify} className="flex items-center gap-2 text-[rgba(245,239,232,0.5)] hover:text-[rgba(245,239,232,0.8)] transition-colors cursor-default" data-verify={cert.verify}>
+            <div key={cert.verify} className="flex items-center gap-2 text-[var(--color-muted)] hover:text-[var(--color-text-main)] transition-colors cursor-default" data-verify={cert.verify}>
               <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 text-[var(--color-primary)]">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
               </svg>
@@ -256,12 +256,12 @@ export function Footer() {
             <span className="w-px h-3 bg-[rgba(255,255,255,0.08)]" />
             <Clock label={tc('nyc')} timeZone="America/New_York" compact />
           </div>
-          <div className="flex items-center gap-3 text-[11px] text-[rgba(245,239,232,0.25)]">
+          <div className="flex items-center gap-3 text-[11px] text-[var(--color-muted)]">
             <span>{t('copy')}</span>
-            <Link href="/privacy" className="hover:text-[rgba(245,239,232,0.5)] transition-colors">
+            <Link href="/privacy" className="hover:text-[var(--color-muted)] transition-colors">
               {tn('privacy')}
             </Link>
-            <Link href="/terms" className="hover:text-[rgba(245,239,232,0.5)] transition-colors">
+            <Link href="/terms" className="hover:text-[var(--color-muted)] transition-colors">
               {tn('terms')}
             </Link>
           </div>

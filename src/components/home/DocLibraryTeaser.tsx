@@ -57,7 +57,7 @@ export function DocLibraryTeaser() {
           </div>
           <Link
             href={`/${locale}/products`}
-            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border border-[rgba(245,239,232,0.15)] text-sm font-semibold hover:bg-[rgba(255,255,255,0.04)] transition-all active:scale-95 flex-shrink-0"
+            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border border-[var(--color-border)] text-sm font-semibold hover:bg-[rgba(255,255,255,0.04)] transition-all active:scale-95 flex-shrink-0"
           >
             {t('cta')}
             <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
@@ -72,7 +72,7 @@ export function DocLibraryTeaser() {
             return (
               <div
                 key={d.titleKey}
-                className="rounded-2xl border border-[rgba(255,255,255,0.06)] bg-[rgba(255,255,255,0.02)] p-5 hover:border-[rgba(255,255,255,0.12)] transition-all cursor-default"
+                className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-glass)] p-5 hover:border-[var(--color-border)] transition-all cursor-default"
               >
                 <Icon className="w-8 h-8 text-[var(--color-primary)] mb-3 opacity-70" />
                 <h4 className="font-[family-name:var(--font-display)] text-sm font-bold mb-1">

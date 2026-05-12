@@ -30,7 +30,7 @@ export function AcademyTeaser() {
           </div>
           <Link
             href={`/${locale}/academy`}
-            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border border-[rgba(245,239,232,0.15)] text-sm font-semibold hover:bg-[rgba(255,255,255,0.04)] transition-all active:scale-95 flex-shrink-0"
+            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border border-[var(--color-border)] text-sm font-semibold hover:bg-[var(--color-glass)] transition-all active:scale-95 flex-shrink-0"
           >
             {t('cta')}
             <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
@@ -43,7 +43,7 @@ export function AcademyTeaser() {
             <Link
               key={a.id}
               href={`/${locale}/academy/${a.id}`}
-              className="group rounded-2xl border border-[rgba(255,255,255,0.06)] bg-[rgba(255,255,255,0.02)] overflow-hidden hover:border-[rgba(255,255,255,0.12)] transition-all hover:-translate-y-1"
+              className="group rounded-2xl border border-[rgba(255,255,255,0.06)] bg-[var(--color-glass)] hover:border-[var(--color-border)] transition-all hover:-translate-y-1"
             >
               <div className="aspect-[16/10] overflow-hidden bg-[rgba(255,255,255,0.03)]">
                 <img
