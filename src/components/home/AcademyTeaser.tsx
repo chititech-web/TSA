@@ -68,7 +68,7 @@ export function AcademyTeaser() {
                 <p className="text-xs text-[var(--color-muted)] leading-relaxed">
                   {t(`${a.id}_desc` as any)}
                 </p>
-                <div className="flex items-center gap-2 mt-4 text-xs font-semibold text-[var(--color-primary)] opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="flex items-center gap-2 mt-4 text-xs font-semibold text-[var(--color-primary)] opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity">
                   {t('read_more')}
                   <svg viewBox="0 0 24 24" fill="currentColor" className="w-3.5 h-3.5">
                     <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>

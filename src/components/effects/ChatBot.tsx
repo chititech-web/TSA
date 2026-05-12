@@ -99,7 +99,7 @@ export function ChatBot() {
                 <button
                   key={qr}
                   onClick={() => handleSend(qr)}
-                  className="text-[10px] px-3 py-1.5 rounded-full border border-[var(--color-border)] text-[var(--color-muted)] hover:text-[var(--color-text-main)] hover:border-[var(--color-primary)] transition-colors"
+                  className="text-[10px] px-3 py-2.5 rounded-full border border-[var(--color-border)] text-[var(--color-muted)] hover:text-[var(--color-text-main)] hover:border-[var(--color-primary)] transition-colors"
                 >
                   {qr}
                 </button>
@@ -114,12 +114,12 @@ export function ChatBot() {
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && handleSend(input)}
               placeholder="Type your message..."
-              className="flex-1 h-10 px-4 rounded-xl bg-[var(--color-surface-1)] border border-[var(--color-border)] text-xs text-[var(--color-text-main)] outline-none focus:border-[var(--color-primary)] transition-colors"
+              className="flex-1 h-11 px-4 rounded-xl bg-[var(--color-surface-1)] border border-[var(--color-border)] text-xs text-[var(--color-text-main)] outline-none focus:border-[var(--color-primary)] transition-colors"
             />
             <button
               onClick={() => handleSend(input)}
               disabled={!input.trim()}
-              className="w-10 h-10 rounded-xl bg-[var(--color-primary)] text-white flex items-center justify-center disabled:opacity-40 hover:brightness-110 transition-all active:scale-[0.95]"
+              className="w-11 h-11 rounded-xl bg-[var(--color-primary)] text-white flex items-center justify-center disabled:opacity-40 hover:brightness-110 transition-all active:scale-[0.95]"
             >
               <Send size={16} />
             </button>

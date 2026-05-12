@@ -444,8 +444,8 @@ function TestimonialCarousel({ t }: { t: (key: string) => string }) {
           <button
             key={i}
             onClick={() => setIdx(i)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${
-              i === idx ? 'bg-[var(--color-primary)] w-5' : 'bg-[var(--color-border)]'
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              i === idx ? 'bg-[var(--color-primary)] w-6' : 'bg-[var(--color-border)]'
             }`}
           />
         ))}

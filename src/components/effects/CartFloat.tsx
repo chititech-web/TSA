@@ -27,7 +27,7 @@ export function CartFloat() {
       )}
 
       {open && (
-        <div className="fixed bottom-24 right-6 z-50 w-80 glass rounded-2xl border border-[var(--color-border)] shadow-2xl overflow-hidden animate-[fadeSlide_0.2s_ease-out]">
+        <div className="fixed bottom-24 right-6 z-50 w-80 max-[360px]:w-[calc(100vw-2rem)] max-[360px]:right-3 max-[360px]:left-3 glass rounded-2xl border border-[var(--color-border)] shadow-2xl overflow-hidden animate-[fadeSlide_0.2s_ease-out]">
           <div className="flex items-center justify-between px-5 py-4 border-b border-[var(--color-border)]">
             <h3 className="text-xs font-bold uppercase tracking-[0.06em]">Enquiry Cart</h3>
             <div className="flex items-center gap-2">

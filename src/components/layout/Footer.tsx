@@ -125,30 +125,30 @@ export function Footer() {
           <div className="col-span-2 md:col-span-1">
             <img src="/images/logo-dark.svg" alt="TS Aromatics" className="h-8 w-auto mb-4" />
             <p className="text-sm text-[var(--color-muted)] mb-6">{t('tagline')}</p>
-            <div className="flex flex-col gap-2 mb-5">
-              <Link href="/products" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">
+            <div className="flex flex-col mb-5">
+              <Link href="/products" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors py-2">
                 {tn('products')}
               </Link>
-              <Link href="/academy" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">
+              <Link href="/academy" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors py-2">
                 {tn('academy')}
               </Link>
-              <Link href="/contact" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">
+              <Link href="/contact" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors py-2">
                 {tn('contact')}
               </Link>
             </div>
-            <div className="flex flex-col gap-2">
-              <Link href="/academy" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">
+            <div className="flex flex-col">
+              <Link href="/academy" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors py-2">
                 {t('docs')}
               </Link>
-              <Link href="/products" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">
+              <Link href="/products" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors py-2">
                 {t('batch')}
               </Link>
             </div>
             <div className="flex gap-4 mt-5">
-              <Link href="/privacy" className="text-xs text-[var(--color-muted)] hover:text-[var(--color-muted)] transition-colors">
+              <Link href="/privacy" className="text-xs text-[var(--color-muted)] hover:text-[var(--color-muted)] transition-colors py-2">
                 {tn('privacy')}
               </Link>
-              <Link href="/terms" className="text-xs text-[var(--color-muted)] hover:text-[var(--color-muted)] transition-colors">
+              <Link href="/terms" className="text-xs text-[var(--color-muted)] hover:text-[var(--color-muted)] transition-colors py-2">
                 {tn('terms')}
               </Link>
             </div>
@@ -158,13 +158,13 @@ export function Footer() {
             <h4 className="text-xs font-bold uppercase tracking-[0.06em] text-[var(--color-muted)] mb-4">
               {t('technical')}
             </h4>
-            <div className="flex flex-col gap-2">
-              <Link href="/academy" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">{t('docs')}</Link>
-              <Link href="/products" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">{t('batch')}</Link>
-              <a href="#" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">{t('sds')}</a>
-              <a href="#" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">{t('ifra')}</a>
-              <a href="#" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">{t('api')}</a>
-              <a href="#" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">{t('partner')}</a>
+            <div className="flex flex-col">
+              <Link href="/academy" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors py-2">{t('docs')}</Link>
+              <Link href="/products" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors py-2">{t('batch')}</Link>
+              <a href="#" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors py-2">{t('sds')}</a>
+              <a href="#" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors py-2">{t('ifra')}</a>
+              <a href="#" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors py-2">{t('api')}</a>
+              <a href="#" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors py-2">{t('partner')}</a>
             </div>
           </div>
 
@@ -172,10 +172,10 @@ export function Footer() {
             <h4 className="text-xs font-bold uppercase tracking-[0.06em] text-[var(--color-muted)] mb-4">
               {t('logistics')}
             </h4>
-            <div className="flex flex-col gap-2 mb-5">
-              <a href="#" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">{t('shipping')}</a>
-              <a href="#" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">{t('incoterms')}</a>
-              <a href="#" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors">{t('lead')}</a>
+            <div className="flex flex-col mb-5">
+              <a href="#" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors py-2">{t('shipping')}</a>
+              <a href="#" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors py-2">{t('incoterms')}</a>
+              <a href="#" className="text-sm text-[var(--color-muted)] hover:text-[var(--color-primary)] transition-colors py-2">{t('lead')}</a>
             </div>
             <div className="flex flex-col gap-1.5">
               <Clock label={tc('delhi')} timeZone="Asia/Kolkata" />

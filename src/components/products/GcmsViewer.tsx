@@ -399,13 +399,27 @@ export function GcmsViewer({ compounds }: { compounds: GcmsCompound[] }) {
       setHoveredIdx(idx);
       canvas!.style.cursor = idx !== null ? 'pointer' : 'default';
     }
+    function onTouchMove(e: TouchEvent) {
+      const touch = e.touches[0];
+      if (!touch) return;
+      const rect = canvas!.getBoundingClientRect();
+      const mx = touch.clientX - rect.left;
+      const my = touch.clientY - rect.top;
+      mouseRef.current = { x: mx, y: my };
+      const w = canvas!.clientWidth;
+      const h = canvas!.clientHeight;
+      const idx = getPeakAtMouse(mx, my, w, h);
+      setHoveredIdx(idx);
+    }
     canvas.addEventListener('mousemove', onMove);
+    canvas.addEventListener('touchmove', onTouchMove, { passive: true });
     canvas.addEventListener('mouseleave', () => setHoveredIdx(null));
 
     return () => {
       cancelAnimationFrame(frameId);
       ro.disconnect();
       canvas.removeEventListener('mousemove', onMove);
+      canvas.removeEventListener('touchmove', onTouchMove);
       canvas.removeEventListener('mouseleave', () => setHoveredIdx(null));
     };
   }, [peaks, compounds.length, getPeakAtMouse]);

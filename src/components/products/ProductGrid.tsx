@@ -99,7 +99,7 @@ export function ProductGrid({
         <div className="flex flex-wrap justify-center gap-2 mb-6">
           <button
             onClick={() => setActiveCat('')}
-            className={`px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-all ${
+            className={`px-4 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-all ${
               !activeCat
                 ? 'bg-[var(--color-primary)] text-white'
                 : 'bg-[var(--color-surface-1)] text-[var(--color-muted)] border border-[var(--color-border)] hover:border-[rgba(255,255,255,0.15)]'
@@ -111,7 +111,7 @@ export function ProductGrid({
             <button
               key={cat}
               onClick={() => setActiveCat(cat === activeCat ? '' : cat)}
-              className={`px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-all ${
+              className={`px-4 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider transition-all ${
                 activeCat === cat
                   ? 'bg-[var(--color-primary)] text-white'
                   : 'bg-[var(--color-surface-1)] text-[var(--color-muted)] border border-[var(--color-border)] hover:border-[rgba(255,255,255,0.15)]'
@@ -135,7 +135,7 @@ export function ProductGrid({
                 value={molSearch}
                 onChange={(e) => setMolSearch(e.target.value)}
                 placeholder="Search molecules..."
-                className="w-full h-8 pl-3 pr-7 rounded-full bg-[rgba(255,255,255,0.04)] border border-[var(--color-border)] text-xs text-[var(--color-text-main)] placeholder:text-[var(--color-muted)] outline-none focus:border-[var(--color-primary)] transition-colors"
+                className="w-full h-11 pl-3 pr-7 rounded-full bg-[rgba(255,255,255,0.04)] border border-[var(--color-border)] text-xs text-[var(--color-text-main)] placeholder:text-[var(--color-muted)] outline-none focus:border-[var(--color-primary)] transition-colors"
               />
               {molSearch && (
                 <button
@@ -151,7 +151,7 @@ export function ProductGrid({
             {activeMol && (
               <button
                 onClick={() => setActiveMol('')}
-                className="px-2.5 py-1 rounded-full text-xs font-semibold border border-[var(--color-primary)] text-[var(--color-primary)] bg-[rgba(255,184,115,0.1)] transition-all"
+                className="px-3 py-2 rounded-full text-xs font-semibold border border-[var(--color-primary)] text-[var(--color-primary)] bg-[rgba(255,184,115,0.1)] transition-all"
               >
                 Clear filter
               </button>
@@ -164,7 +164,7 @@ export function ProductGrid({
                 <button
                   key={tag}
                   onClick={() => setActiveMol(isActive ? '' : tag)}
-                  className="px-2.5 py-1 rounded-full text-xs font-semibold transition-all"
+                  className="px-3 py-2 rounded-full text-xs font-semibold transition-all"
                   style={{
                     borderColor: isActive ? color : 'var(--color-border)',
                     backgroundColor: isActive ? `${color}20` : 'transparent',

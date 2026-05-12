@@ -106,7 +106,7 @@ export function Header() {
           {mounted && (
             <button
               onClick={toggleTheme}
-              className="w-9 h-9 rounded-full grid place-items-center bg-[var(--color-surface-1)] text-[var(--color-text-main)] hover:scale-105 transition-transform"
+              className="w-11 h-11 rounded-full grid place-items-center bg-[var(--color-surface-1)] text-[var(--color-text-main)] hover:scale-105 transition-transform"
               aria-label="Toggle theme"
             >
               {theme === 'dark' ? <Sun size={15} /> : <Moon size={15} />}
@@ -115,7 +115,7 @@ export function Header() {
 
           <button
             onClick={toggleLang}
-            className="w-9 h-9 rounded-full grid place-items-center bg-[var(--color-surface-1)] text-[var(--color-text-main)] text-xs font-black hover:scale-105 transition-transform"
+            className="w-11 h-11 rounded-full grid place-items-center bg-[var(--color-surface-1)] text-[var(--color-text-main)] text-xs font-black hover:scale-105 transition-transform"
             aria-label="Switch language"
           >
             {locale === 'en' ? 'EN' : 'हि'}
@@ -129,7 +129,7 @@ export function Header() {
           </Link>
 
           <button
-            className="lg:hidden w-9 h-9 rounded-full grid place-items-center bg-[var(--color-surface-1)] text-[var(--color-text-main)]"
+            className="lg:hidden w-11 h-11 rounded-full grid place-items-center bg-[var(--color-surface-1)] text-[var(--color-text-main)]"
             onClick={() => setOpen(!open)}
             aria-label="Toggle navigation"
           >
@@ -147,7 +147,7 @@ export function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm transition-colors ${
+                className={`text-sm transition-colors py-2 ${
                   active
                     ? 'text-[var(--color-brand-red)]'
                     : 'text-[var(--color-muted)] hover:text-[var(--color-brand-red)]'

@@ -478,7 +478,7 @@ export function MolecularExplorer3D({
 
   return (
     <div
-      className="relative w-full h-[600px] rounded-2xl overflow-hidden bg-[var(--color-surface-2)]"
+      className="relative w-full min-h-[350px] h-[50vh] max-h-[600px] rounded-2xl overflow-hidden bg-[var(--color-surface-2)]"
       onMouseMove={handleMouseMove}
     >
       <Canvas camera={{ position: [0, 0, 12], fov: 50 }}>
