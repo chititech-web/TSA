@@ -84,7 +84,7 @@ export function WhyBento() {
         className="absolute inset-0 z-0 opacity-[0.012] pointer-events-none"
         style={{
           backgroundImage:
-            'repeating-linear-gradient(0deg, transparent, transparent 39px, var(--color-border) 39px, var(--color-border) 40px), repeating-linear-gradient(90deg, transparent, transparent 39px, var(--color-border) 39px, var(--color-border) 40px)',
+            'repeating-linear-gradient(0deg, transparent, transparent 39px, var(--color-text-main) 39px, var(--color-text-main) 40px), repeating-linear-gradient(90deg, transparent, transparent 39px, var(--color-text-main) 39px, var(--color-text-main) 40px)',
         }}
       />
 
