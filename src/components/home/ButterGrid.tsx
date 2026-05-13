@@ -4,9 +4,9 @@ import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 
 const butters = [
-  { key: 'shea', title: 'Shea Butter', img: '/images/products/carrier.svg' },
-  { key: 'cocoa', title: 'Cocoa Butter', img: '/images/products/carrier.svg' },
-  { key: 'mango', title: 'Mango Butter', img: '/images/products/carrier.svg' },
+  { key: 'shea', title: 'Shea Butter', img: '/images/products/shea-butter/product.png' },
+  { key: 'cocoa', title: 'Cocoa Butter', img: '/images/products/cocoa-butter/product.png' },
+  { key: 'mango', title: 'Mango Butter', img: '/images/products/mango-butter/product.png' },
 ];
 
 export function ButterGrid({ locale }: { locale: string }) {
@@ -42,11 +42,11 @@ export function ButterGrid({ locale }: { locale: string }) {
               href={`/${locale}/products`}
               className="group bg-[var(--color-surface-2)] border border-[var(--color-border)] rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-[5px] hover:shadow-[0_20px_60px_rgba(0,0,0,0.4)] will-change-transform"
             >
-              <div className="aspect-square overflow-hidden relative bg-[var(--color-surface-1)] flex items-center justify-center p-8">
+              <div className="aspect-square overflow-hidden relative bg-[var(--color-surface-1)] flex items-center justify-center">
                 <img
                   src={b.img}
                   alt=""
-                  className="w-3/4 h-3/4 object-contain transition-transform duration-[450ms] group-hover:scale-106 opacity-60"
+                  className="w-full h-full object-cover transition-transform duration-[450ms] group-hover:scale-106"
                   loading="lazy"
                 />
               </div>
