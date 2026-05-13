@@ -3,12 +3,12 @@
 import { useTranslations } from 'next-intl';
 
 const tiles = [
-  { src: '/images/sections/social-botanical.svg', alt: 'Botanical leaves close up' },
-  { src: '/images/sections/social-amber-bottle.svg', alt: 'Amber glass bottle' },
-  { src: '/images/sections/social-lab.svg', alt: 'Lab testing setup' },
-  { src: '/images/sections/social-lavender.svg', alt: 'Lavender oil post' },
-  { src: '/images/sections/social-carrier.svg', alt: 'Carrier oil post' },
-  { src: '/images/sections/social-farm.svg', alt: 'Sourcing farm placeholder' },
+  { src: '/images/sections/social-botanical.png', alt: 'Botanical leaves close up' },
+  { src: '/images/sections/social-amber-bottle.png', alt: 'Amber glass bottle' },
+  { src: '/images/sections/social-lab.png', alt: 'Lab testing setup' },
+  { src: '/images/sections/social-lavender.png', alt: 'Lavender oil post' },
+  { src: '/images/sections/social-carrier.png', alt: 'Carrier oil post' },
+  { src: '/images/sections/social-farm.png', alt: 'Sourcing farm placeholder' },
 ];
 
 export function SocialFeed() {
