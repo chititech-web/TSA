@@ -2,10 +2,7 @@ import { notFound } from 'next/navigation';
 import { getAllArticles, getArticleById, getArticleContent } from '@/data/academy';
 import { ArticleDetail } from '@/components/academy/ArticleDetail';
 
-export function generateStaticParams() {
-  const articles = getAllArticles();
-  return articles.map((a) => ({ id: a.id }));
-}
+export const dynamic = 'force-dynamic';
 
 export default async function ArticlePage({
   params,
