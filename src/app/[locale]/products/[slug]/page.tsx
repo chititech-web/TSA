@@ -3,10 +3,7 @@ import { getAllProducts, getProductBySlug } from '@/data/products';
 import { getGcmsData } from '@/data/gcms';
 import { ProductDetail } from '@/components/products/ProductDetail';
 
-export function generateStaticParams() {
-  const products = getAllProducts();
-  return products.map((p) => ({ slug: p.id }));
-}
+export const dynamic = 'force-dynamic';
 
 export default async function ProductDetailPage({
   params,
